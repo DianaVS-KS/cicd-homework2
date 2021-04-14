@@ -5,12 +5,14 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 . ~/.nvm/nvm.sh
 nvm install node
 
+
 sudo dpkg --purge codedeploy-agent
 sleep 15
-sudo rm -r /opt/codedeploy-agent/
+cd /opt
+sudo rm -r codedeploy-agent/
 sleep 5
-sudo /home/ubuntu/install auto > /tmp/logfile
-
+cd /home/ubuntu/
+sudo .install auto > /tmp/logfile
 sleep 5
 
 sudo rm -r /home/ubuntu/cicd2
