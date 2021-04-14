@@ -7,6 +7,8 @@ nvm install node
 
 #create our working directory if it doesnt exist
 DIR="/home/ubuntu/cicd2"
+sudo rm -r /home/ubuntu/cicd2
+
 if [ -d "$DIR" ]; then
   echo "${DIR} exists"
 else
