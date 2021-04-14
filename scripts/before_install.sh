@@ -9,5 +9,7 @@ sudo dpkg --purge codedeploy-agent
 sudo rm -r /opt/codedeploy-agent/
 sudo /home/ubuntu/install auto > /tmp/logfile
 
+sleep 10
+
 sudo rm -r /home/ubuntu/cicd2
 mkdir /home/ubuntu/cicd2
