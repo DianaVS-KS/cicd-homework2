@@ -7,7 +7,7 @@ nvm install node
 
 sudo dpkg --purge codedeploy-agent
 sudo rm -r /opt/codedeploy-agent/
-sudo ./install auto > /tmp/logfile
+sudo /home/ubuntu/install auto > /tmp/logfile
 
 sudo rm -r /home/ubuntu/cicd2
 mkdir /home/ubuntu/cicd2
