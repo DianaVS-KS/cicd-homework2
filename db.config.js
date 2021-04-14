@@ -6,6 +6,7 @@ var connection = mysql.createConnection({
     password: "amazonrdsdiana",
     database: "HW2",
     port: '3306',
+    connectTimeout: 30000,
 });
 
 connection.connect(function(err) {
